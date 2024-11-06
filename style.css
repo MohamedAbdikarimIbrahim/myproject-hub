@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Beautiful gradient background */
-  scroll-behavior: smooth; /* Enables smooth scrolling */
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  /* Beautiful gradient background */
 }
 
 a {
@@ -102,4 +102,13 @@ h3 {
 }
 
 .social-logo {
-  width:
+  width: 24px;
+  /* Adjust size as needed */
+  height: 24px;
+  vertical-align: middle;
+}
+
+.copyright {
+  color: gray;
+}
+
