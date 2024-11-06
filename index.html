@@ -2,74 +2,247 @@
 <html lang="en">
 
 <head>
-  <title>My First Web Page</title>
-  <link rel="stylesheet" href="style.css">
+    <title>My First Web Page</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 60px 20px;
+            box-sizing: border-box;
+        }
+
+        #navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 8px;
+            background-color: whitesmoke;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+
+        #hero {
+            padding-top: 80px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #moha {
+            object-fit: cover;
+        }
+
+        #about {
+            display: flex;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 8px;
+        }
+
+        #description {
+            width: 50%;
+            padding-right: 8px;
+        }
+
+        #team {
+            width: 50%;
+        }
+
+        #team-image {
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        #logo {
+            height: 35px;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+            margin-top: 0;
+        }
+
+        #moha {
+            width: 100%;
+            max-height: 370px;
+        }
+
+        .location {
+            color: gray;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        #jobs {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 8px;
+        }
+
+        h3 {
+            margin-bottom: 4px;
+            margin-top: 0;
+        }
+
+        .apply {
+            float: right;
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .apply:hover {
+            background-color: #45a049;
+        }
+
+        #footer {
+            background-color: gainsboro;
+            padding: 8px;
+            text-align: center;
+        }
+
+        #footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        #footer-links li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        .social-logo {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+        }
+
+        .copyright {
+            color: gray;
+        }
+
+        #jobs div {
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .experience {
+            display: block;
+            margin-top: 10px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
 </head>
 
 <body>
-  <div id="navbar">
-    <nav>
-      <img id="logo" alt="moha logo" src="logo.jpg" />
-      <span id="name">De Mohamed</span>
-    </nav>
-  </div>
-  <img id="moha" src="moha.jpg" height="370" alt="De Mohamed">
-  <h1 id="about-title">About De Mohamed</h1>
+    <div id="navbar">
+        <nav>
+            <img id="logo" alt="moha logo" src="logo.jpg" />
+            <span id="name">De Mohamed</span>
+        </nav>
+    </div>
 
-  <div id="about" class="hidden">
-    <div id="description">
-      <p>Hi, I'm Mohamed Abdikarim, welcome to my corner of the web. As a dedicated student at Pivosoft Coding Academy, I'm on a thrilling journey to master the art of coding. Every line of code I write is a step closer to turning my ambitious dreams into reality. With a burning passion for technology, I'm continuously exploring new realms of programming, ready to tackle any challenge that comes my way. I hold a degree in Cyber Security from the International Business, Science and Technology University. Recently, I furthered my expertise by earning certifications in CompTIA A+, CompTIA Network+, and Cisco CCNA. With a solid foundation in both theoretical knowledge and practical skills, I am committed to advancing my career in this dynamic field. My passion for continuous learning drives me to seek new challenges and opportunities, ensuring that this journey in the world of cyber security is just the beginning. In my free time, I indulge in various activities that bring me joy and fulfillment. I enjoy reading the Holy Quran, which brings me peace and guidance. I am also fascinated by historical events, immersing myself in the stories and lessons of the past. Watching football is another passion of mine, as I love the excitement and strategy of the game. Lastly, I cherish spending quality time with my family, making memories and strengthening our bond.</p>
-    </div>
-    <div id="team">
-      <img id="team-image" src="work.jpg" alt="work">
-    </div>
-  </div>
+    <section id="hero">
+        <img id="moha" src="moha.jpg" alt="De Mohamed">
+        <h1>About De Mohamed</h1>
 
-  <h2 id="skills-title">Skills</h2>
-  <div id="jobs" class="hidden">
-    <div>
-      <a href="mailto:ducaqabe@gmail.com" class="apply">Apply</a>
-      <h3 class="job-role"> Front End Developer </h3>
-      <span class="experience">Experienced in creating interactive and responsive web applications using HTML, CSS, JavaScript, and popular frameworks like React and Angular.</span>
-    </div>
-    <div>
-      <a href="mailto:ducaqabe@gmail.com" class="apply">Apply</a>
-      <h3 class="job-role"> C++ </h3>
-      <span class="experience">Proficient in developing robust software applications and systems programming with a strong foundation in object-oriented programming and memory management.</span>
-    </div>
-    <div>
-      <a href="mailto:ducaqabe@gmail.com" class="apply">Apply</a>
-      <h3 class="job-role"> Python </h3>
-      <span class="experience">Skilled in writing clean, efficient code for a variety of applications, including web development, data analysis, and scripting.</span>
-    </div>
-    <div>
-      <a href="mailto:ducaqabe@gmail.com" class="apply">Apply</a>
-      <h3 class="job-role"> Forex Trader </h3>
-      <span class="experience">Knowledgeable in foreign exchange markets with hands-on experience in trading strategies,
-        technical analysis, and risk management.</span>
-    </div>
-  </div>
+        <div id="about">
+            <div id="description">
+                <p>Hi, I'm Mohamed Abdikarim, welcome to my corner of the web. As a dedicated student at Pivosoft Coding Academy,
+                    I'm on a thrilling journey to master the art of coding. Every line of code I write is a step closer to turning
+                    my ambitious dreams into reality. With a burning passion for technology, I'm continuously exploring new realms
+                    of programming, ready to tackle any challenge that comes my way. I hold a degree in Cyber Security from the
+                    International Business, Science and Technology University. Recently, I furthered my expertise by earning
+                    certifications in CompTIA A+, CompTIA Network+, and Cisco CCNA. With a solid foundation in both theoretical
+                    knowledge and practical skills, I am committed to advancing my career in this dynamic field. My passion for
+                    continuous learning drives me to seek new challenges and opportunities, ensuring that this journey in the world
+                    of cyber security is just the beginning. In my free time, I indulge in various activities that bring me joy and
+                    fulfillment. I enjoy reading the Holy Quran, which brings me peace and guidance. I am also fascinated by
+                    historical events, immersing myself in the stories and lessons of the past. Watching football is another passion
+                    of mine, as I love the excitement and strategy of the game. Lastly, I cherish spending quality time with my
+                    family, making memories and strengthening our bond.</p>
+            </div>
+            <div id="team">
+                <img id="team-image" src="work.jpg" alt="work">
+            </div>
+        </div>
+    </section>
 
-  <div id="footer">
-    <ul id="footer-links">
-      <li>
-        <a href="https://www.instagram.com/mohamed_abdilkarem/profilecard/?igsh=MW9tNWU0Y2hscWE0Zg==" target="_blank">
-          <img src="instagram-logo.jpg" alt="Instagram" class="social-logo">
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/mohamad-abdikarim-23452a324/" target="_blank">
-          <img src="linkedin-logo.jpg" alt="LinkedIn" class="social-logo">
-        </a>
-      </li>
-      <li>
-        <a href="https://www.facebook.com/settings" target="_blank">
-          <img src="Facebook-logo.jpg" alt="Facebook" class="social-logo"
-        </a>
-      </li>
-    </ul>
-    <span class="copyright"> © 2024 pedrudiin</span>
-  </div>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div id="jobs">
+            <div>
+                <a href="mailto:ducaqabe@gmail.com" class="apply">Apply</a>
+                <h3 class="job-role">Front End Developer</h3>
+                <span class="experience">Experienced in creating interactive and responsive web applications using HTML, CSS,
+                    JavaScript, and popular frameworks like React and Angular.</span>
+            </div>
+            <div>
+                <a href="mailto:ducaqabe@gmail.com" class="apply">Apply</a>
+                <h3 class="job-role">C++</h3>
+                <span class="experience">Proficient in developing robust software applications and systems programming with a
+                    strong foundation in object-oriented programming and memory management.</span>
+            </div>
+            <div>
+                <a href="mailto:ducaqabe@gmail.com" class="apply">Apply</a>
+                <h3 class="job-role">Python</h3>
+                <span class="experience">Skilled in writing clean, efficient code for a variety of applications, including web
+                    development, data analysis, and scripting.</span>
+            </div>
+            <div>
+                <a href="mailto:ducaqabe@gmail.com" class="apply">Apply</a>
+                <h3 class="job-role">Forex Trader</h3>
+                <span class="experience">Knowledgeable in foreign exchange markets with hands-on experience in trading strategies,
+                    technical analysis, and risk management.</span>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer">
+        <ul id="footer-links">
+            <li>
+                <a href="https://www.instagram.com/mohamed_abdilkarem/profilecard/?igsh=MW9tNWU0Y2hscWE0Zg==" target="_blank">
+                    <img src="instagram-logo.jpg" alt="Instagram" class="social-logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/mohamad-abdikarim-23452a324/" target="_blank">
+                    <img src="linkedin-logo.jpg" alt="LinkedIn" class="social-logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/settings" target="_blank">
+                    <img src="facebook-logo.jpg" alt="Facebook" class="social-logo">
+                </a>
+            </li>
+        </ul>
+        <span class="copyright">© 2024 pedrudiin</span>
+    </div>
 </body>
+
+</html>
 
 
