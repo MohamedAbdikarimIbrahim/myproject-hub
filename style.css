@@ -1,128 +1,119 @@
-  body {
-            margin: 0;
-            font-family: sans-serif;
-            background: linear-gradient(to right, #ff7e5f, #feb47b);
-        }
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* Use a more modern font */
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Beautiful gradient background */
+  color: #333; /* Darker text color for better readability */
+}
 
-        section {
-            min-height: 100vh;
-            padding: 60px 20px;
-            box-sizing: border-box;
-        }
+/* Link Styles */
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
 
-        #navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 8px;
-            background-color: whitesmoke;
-            z-index: 1000;
-            box-sizing: border-box;
-        }
+a:hover {
+  color: #ff7e5f; /* Change color on hover */
+}
 
-        #hero {
-            padding-top: 80px;
-        }
+/* Navbar Styles */
+#navbar {
+  padding: 12px; /* Increased padding for a more spacious feel */
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for a modern look */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
 
-        a {
-            text-decoration: none;
-        }
+/* About Section */
+#about {
+  display: flex;
+  max-width: 800px;
+  margin: 20px auto; /* Added margin for spacing */
+  padding: 16px; /* Increased padding for a cleaner look */
+}
 
-        #moha {
-            object-fit: cover;
-        }
+/* Description and Team Styles */
+#description {
+  flex: 1; /* Use flexbox for responsive design */
+  padding-right: 16px; /* Increased padding */
+}
 
-        #about {
-            display: flex;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 8px;
-        }
+#team {
+  flex: 1; /* Use flexbox for responsive design */
+}
 
-        #description {
-            width: 50%;
-            padding-right: 8px;
-        }
+#team-image {
+  border-radius: 10px; /* More rounded corners for a modern feel */
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
 
-        #team {
-            width: 50%;
-        }
+/* Logo Styles */
+#logo {
+  height: 40px; /* Slightly larger logo */
+  margin: 0;
+}
 
-        #team-image {
-            border-radius: 5px;
-            width: 100%;
-        }
+/* Headings */
+h1 {
+  text-align: center;
+  color: darkblue;
+  margin: 20px 0; /* Added margin for spacing */
+}
 
-        #logo {
-            height: 35px;
-            margin: 0;
-        }
+h2 {
+  text-align: center;
+  margin: 20px 0; /* Added margin for spacing */
+}
 
-        h1 {
-            text-align: center;
-            color: darkblue;
-            margin-top: 0;
-        }
+h3 {
+  margin: 10px 0; /* Adjusted margin for better spacing */
+}
 
-        #moha {
-            width: 100%;
-            max-height: 370px;
-        }
+/* Job Application Button */
+.apply {
+  float: right;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px; /* Increased padding for a better button size */
+  border-radius: 5px;
+  border: none; /* Removed border */
+  cursor: pointer; /* Pointer cursor for better UX */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
 
-        .location {
-            color: gray;
-        }
+.apply:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
 
-        h2 {
-            text-align: center;
-            margin-top: 0;
-        }
+/* Footer Styles */
+#footer {
+  background-color: gainsboro;
+  padding: 16px; /* Increased padding */
+  margin-top: 32px;
+  text-align: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
 
-        #jobs {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 8px;
-        }
+#footer-links {
+  list-style: none;
+  padding: 0;
+}
 
-        h3 {
-            margin-bottom: 4px;
-            margin-top: 0;
-        }
+#footer-links li {
+  display: inline;
+  margin: 0 20px;
+}
 
-        .apply {
-            float: right;
-            background-color: #4CAF50;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
+/* Social Logo Styles */
+.social-logo {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
 
-        .apply:hover {
-            background-color: #45a049;
-        }
-
-        #footer {
-            background-color: gainsboro;
-            padding: 8px;
-            text-align: center;
-        }
-
-        #footer-links {
-            list-style: none;
-            padding: 0;
-        }
-
-        #footer-links li {
-            display: inline;
-            margin: 0 20px;
-        }
-
-        .social-logo {
-            width: 24px;
-            height: 24px;
-            vertical-align: middle;
-        }
-
-        .copyright {
-            color: gray;
-        }
+/* Copyright Styles */
+.copyright {
+  color: gray;
+  margin-top: 10px; /* Added margin for spacing */
+}
