@@ -1,98 +1,94 @@
-/* General Styles */
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif; /* Use a more modern font */
-  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Beautiful gradient background */
-  color: #333; /* Darker text color for better readability */
+  font-family: sans-serif;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  /* Beautiful gradient background */
 }
 
-/* Link Styles */
 a {
   text-decoration: none;
-  color: inherit; /* Inherit color from parent */
-  transition: color 0.3s ease; /* Smooth color transition */
 }
 
-a:hover {
-  color: #ff7e5f; /* Change color on hover */
-}
-
-/* Navbar Styles */
 #navbar {
-  padding: 12px; /* Increased padding for a more spacious feel */
-  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for a modern look */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 8px;
+  background-color: whitesmoke;
 }
 
-/* About Section */
+#moha {
+  object-fit: cover;
+}
+
 #about {
   display: flex;
   max-width: 800px;
-  margin: 20px auto; /* Added margin for spacing */
-  padding: 16px; /* Increased padding for a cleaner look */
+  margin: 0 auto;
+  padding: 8px;
 }
 
-/* Description and Team Styles */
 #description {
-  flex: 1; /* Use flexbox for responsive design */
-  padding-right: 16px; /* Increased padding */
+  width: 50%;
+  padding-right: 8px;
 }
 
 #team {
-  flex: 1; /* Use flexbox for responsive design */
+  width: 50%;
 }
 
 #team-image {
-  border-radius: 10px; /* More rounded corners for a modern feel */
+  border-radius: 5px;
   width: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-/* Logo Styles */
 #logo {
-  height: 40px; /* Slightly larger logo */
+  height: 35px;
   margin: 0;
 }
 
-/* Headings */
 h1 {
   text-align: center;
   color: darkblue;
-  margin: 20px 0; /* Added margin for spacing */
+}
+
+#moha {
+  width: 100%;
+}
+
+.location {
+  color: gray;
 }
 
 h2 {
   text-align: center;
-  margin: 20px 0; /* Added margin for spacing */
+}
+
+#jobs {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 8px;
 }
 
 h3 {
-  margin: 10px 0; /* Adjusted margin for better spacing */
+  margin-bottom: 4px;
+  margin-top: 0;
 }
 
-/* Job Application Button */
 .apply {
   float: right;
   background-color: #4CAF50;
   color: white;
-  padding: 10px 15px; /* Increased padding for a better button size */
+  padding: 5px 10px;
   border-radius: 5px;
-  border: none; /* Removed border */
-  cursor: pointer; /* Pointer cursor for better UX */
-  transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 .apply:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #45a049;
 }
 
-/* Footer Styles */
 #footer {
   background-color: gainsboro;
-  padding: 16px; /* Increased padding */
+  padding: 8px;
   margin-top: 32px;
   text-align: center;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 #footer-links {
@@ -105,15 +101,13 @@ h3 {
   margin: 0 20px;
 }
 
-/* Social Logo Styles */
 .social-logo {
   width: 24px;
+  /* Adjust size as needed */
   height: 24px;
   vertical-align: middle;
 }
 
-/* Copyright Styles */
 .copyright {
   color: gray;
-  margin-top: 10px; /* Added margin for spacing */
 }
